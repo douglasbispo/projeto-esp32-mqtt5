@@ -39,13 +39,20 @@ Para replicar este projeto, você precisará dos seguintes itens:
 
 ## Como executar o projeto
 
-Clone este repositório:
+Siga esses passos para rodar o projeto no seu ESP32.
 
-```
-git clone git@github.com:douglasbispo/projeto-esp32-mqtt5.git
-```
+### 1. Obtenha o Código-Fonte
 
-### 2. Abrir o projeto no Visual Studio Code
+1. **Clone este repositório:**
+   ```
+   git clone git@github.com:douglasbispo/projeto-esp32-mqtt5.git
+   ```
+2.  **Dentro da pasta raiz do projeto**, localize e exclua as seguintes pastas/arquivos:
+    * A pasta chamada `build/`
+    * O arquivo chamado `sdkconfig` (se existir)
+    * O arquivo chamado `sdkconfig.old` (se existir)
+
+### 2. Abra o projeto no Visual Studio Code
 
 No VS Code, abra a pasta do projeto que você acabou de clonar:
 
