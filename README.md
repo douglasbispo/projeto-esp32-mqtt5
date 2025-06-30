@@ -69,9 +69,8 @@ Configurar sua rede Wi-Fi para que o ESP32 possa se conectar:
     * **Desmarque** a opção `[ ] Get ssid and password from stdin` (use a barra de espaço para desmarcar).
     * Selecione **`(myssid) Wifi SSID`**, pressione `Enter`, e digite o **nome exato** da sua rede Wi-Fi. Pressione `Enter` para confirmar.
     * Selecione **`(mypassword) Wifi Password`**, pressione `Enter`, e digite a **senha exata** da sua rede Wi-Fi. Pressione `Enter` para confirmar.
-    * Pressione a tecla `Esc` duas vezes para voltar ao menu principal `(Top)`.
-    * Selecione **`< Save >`** e pressione `Enter` para confirmar a alteração das configurações.
-    * Selecione **`< Exit >`** e pressione `Enter` para sair do `menuconfig`.
+    * Pressione a tecla `Esc` duas vezes para aparecer a opção de salvar.
+    * Pressione **`Y`** salvar as alteração feitas.
 
 ### 4. Compile e Faça o flash no ESP32
 
@@ -79,13 +78,12 @@ Compile o código e flash(grave) o firmware no seu ESP32:
 
 1.  **Conecte seu ESP32 ao computador** utilizando o cabo USB.
 2.  Verifique qual é a **porta COM** do seu ESP32. No Gerenciador de Dispositivos do Windows procure em "Portas (COM & LPT)". Anote o número (ex: `COM4`).
-3.  No **Terminal ESP-IDF** no VS Code, se o monitor serial estiver ativo, pressione `Ctrl + c` depois `Ctrl + x` para fechá-lo.
-4.  Execute o seguinte comando para compilar o projeto e gravar no ESP32:
+3.  Execute o seguinte comando para compilar o projeto e gravar no ESP32:
     ```
     idf.py -p COM4 flash monitor
     ```
     **Substitua `COM4` pelo número da porta COM do seu ESP32**.
-5.  Ao termino do flashing, o ESP32 deverá se conectar e aguardar comandos.
+4.  Ao termino do flashing, o ESP32 deverá se conectar e aguardar comandos.
 
 ### 5. Teste o Controle do LED com um Cliente MQTT (MQTT Explorer)
 
